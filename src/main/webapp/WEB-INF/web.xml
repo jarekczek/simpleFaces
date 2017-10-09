@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee">
+  <servlet>
+    <servlet-name>simpleFaces</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>simpleFaces</servlet-name>
+    <url-pattern>*.xhtml</url-pattern>
+  </servlet-mapping>
+</web-app>

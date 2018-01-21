@@ -5,15 +5,20 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Title</title>
-    <h:form>
-    <h:messages/>
-        <h:inputText title="some tytul" value="myBean.textIn" />
-        <h:outputText title="some out" value="#{myBean.text}" />
-    </h:form>
+  <meta charset="UTF-8"/>
+  <title>Title</title>
 </head>
 <body>
+
+<div>
+  <h:form>
+  <h:messages/>
+    <h:outputText title="some out" value='#{sessionBean.count}' />
+    <br/>
+    <h:commandButton value="inc" actionListener="#{przycisk.action}"/>
+    <br/>
+  </h:form>
+</div>
 
 </body>
 </html>

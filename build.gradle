@@ -47,6 +47,7 @@ tasks.withType(Test) {
 
 task glass (type:Exec, dependsOn: 'war') {
   description = 'deploy at glassfish'
+  group = 'jarek'
   commandLine = [
      'D:\\lang\\java\\j2ee\\glassfish4\\bin\\asadmin.bat',
     'deploy',
